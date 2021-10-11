@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tutorial</title>
+
+        <style>
+            /* Element stijl */
+            h1 {
+                color:brown;
+                background-color: rgb(79, 135, 255);
+            }
+
+            p {
+                color: green;
+                font-size: 20px;
+            }
+            
+            img {
+                margin: 10px;
+                padding: 10px;
+                color: red;
+            }
+            /* Class stijl */
+            .style1{
+                color: blue;
+                background-color: rgb(250, 146, 61);
+            }
+
+            .style2{
+                color: slateblue;
+                line-height: 10px;
+                text-decoration-line: overline underline;
+                font: bold;
+                font-size: 20px;
+            }
+
+            #header1{
+                color: purple;
+                background-color: lawngreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Working Talent HTML Workshop</h1>
+        
+        <div style="width: 50%; float:left">
+            <h2 class="style1">Head to this...</h2>
+        </div>
+
+        <div style="width: 50%; float:right">
+            <h2 id="header1">Head to that...</h3>
+        </div>
+        
+        I wonder if this is <b>bold</b>. Yes, it is.
+        <p>This is the scedule.</p>
+        <img id="imgrooster" src="C:\Users\gertj\Desktop\Working Talent\Rooster.PNG" width=100%; onclick="func()" onwheel="func2()"><br>
+        
+        Turn upside down</button><br>
+        Next, we do some table.
+
+        <table>
+            <caption><b>Table</b></caption>
+            <tr>
+                <td>A</td>
+                <td class="style2">B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td class="style2">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td class="style2">D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td class="style2">E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+        </table>
+
+        <ul>
+            <li>hoi</li>
+            <li>hoi</li>
+            <li>hoi</li>
+        </ul>
+
+        <ol>
+            <li>hoi</li>
+            <li>hoi</li>
+            <li>hoi</li>
+        </ol>
+        <div style="width: 50%; float:left">
+            <img id="imgrooster" src="C:\Users\gertj\Desktop\Working Talent\Rooster.PNG" width=100%><br>
+        </div>
+
+        <div style="width: 50%; float:right">
+            <img id="imgrooster" src="C:\Users\gertj\Desktop\Working Talent\RoosterT.PNG" width=100%><br>
+        </div>
+    </body>
+
+    <script>
+        function func() {
+          document.getElementById("imgrooster").src = "C:/Users/gertj/Desktop/Working Talent/RoosterT.PNG";
+        }
+        function func2() {
+          document.getElementById("imgrooster").src = "C:/Users/gertj/Desktop/Working Talent/Rooster.PNG";
+        }
+    </script>
+</html>
